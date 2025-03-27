@@ -59,13 +59,15 @@ function FirstPage() {
           <div
             key={index}
             className="text-white bg-green-700 p-11 w-64 text-center rounded-md cursor-pointer relative"
+            onClick={() => handleSlideClick(slide2)} // Open popup with slide data
           >
-            <span onClick={() => handleSlideClick(slide2)}>
-              {slide2.showName}
-            </span>
+            <span>{slide2.showName}</span>
             <Trash2
-              onClick={() => handleDeleteSlide(slide2.id)} // Delete the slide
-              className="absolute right-1 top-1 cursor-pointer "
+              onClick={(e) => {
+                e.stopPropagation(); // Prevent event propagation to parent <div>
+                handleDeleteSlide(slide2.id); // Delete the slide
+              }}
+              className="absolute right-1 top-1 cursor-pointer"
             />
           </div>
         ))}
