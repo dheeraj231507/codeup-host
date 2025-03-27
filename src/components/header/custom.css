@@ -1,0 +1,45 @@
+@media (max-width: 320px) {
+  .custom-flex {
+    position: relative; /* Enable absolute positioning for children */
+    height: 60px; /* Define a fixed height for the header */
+  }
+
+  .logo {
+    position: absolute;
+    left: -26px; /* Align to the left with padding */
+    top: 5%; /* Vertically center */
+    transform: translateY(-50%);
+    width: 60%;
+  }
+
+  .menu {
+    position: absolute;
+    right: -26px; /* Align to the right with padding */
+    top: 5%; /* Vertically center */
+    transform: translateY(-50%);
+    width: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-flex {
+    position: relative; /* Enable absolute positioning for children */
+    height: 60px; /* Define a fixed height for the header */
+  }
+
+  .logo {
+    position: absolute;
+    left: -26px; /* Align to the left with padding */
+    top: 28%; /* Vertically center */
+    transform: translateY(-50%);
+    width: 60%;
+  }
+
+  .menu {
+    position: absolute;
+    right: -26px; /* Align to the right with padding */
+    top: 34%; /* Vertically center */
+    transform: translateY(-50%);
+    width: 15%;
+  }
+}

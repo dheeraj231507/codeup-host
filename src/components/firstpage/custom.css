@@ -1,0 +1,22 @@
+@media (max-width: 320px) {
+  .custom-flex {
+    display: block; /* Override flex behavior */
+    text-align: center; /* Optional: Center-align content */
+  }
+
+  .logo {
+    position: absolute;
+    left: 0; /* Align to the left */
+    top: 5%; /* Vertically center */
+    padding-left: 10px;
+    transform: translateY(-50%);
+  }
+
+  .menu {
+    position: absolute;
+    right: 0; /* Align to the right */
+    top: 5%; /* Vertically center */
+    transform: translateY(-50%);
+    padding-right: 10px;
+  }
+}
